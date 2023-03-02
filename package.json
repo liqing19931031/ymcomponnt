@@ -4,8 +4,7 @@
   "description": "针对云脉后台的组件封装",
   "main": "dist/main.js",
   "scripts": {
-    "test": "webpack && pnpm link",
-    "build": "webpack   publish --access=public"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
