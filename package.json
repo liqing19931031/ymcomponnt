@@ -4,7 +4,8 @@
   "description": "针对云脉后台的组件封装",
   "main": "dist/main.js",
   "scripts": {
-    "build": "webpack"
+    "test": "webpack && pnpm link",
+    "build": "webpack   publish --access=public"
   },
   "repository": {
     "type": "git",
@@ -22,15 +23,17 @@
     "@babel/preset-react": "^7.18.6",
     "babel": "^6.23.0",
     "babel-loader": "^9.1.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "antd": "^5.2.3"
+    "antd": "^5.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "antd": "^5.2.3"
+    "antd": "^5.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
