@@ -1,7 +1,7 @@
 {
   "name": "@ymcop/ymcop",
   "version": "1.0.3",
-  "description": "",
+  "description": "针对云脉后台的组件封装",
   "main": "dist/main.js",
   "scripts": {
     "build": "webpack"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://oauth2: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@github.com/liqing19931031/ymcomponnt.git"
   },
-  "author": "",
+  "author": "liqing",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/liqing19931031/ymcomponnt/issues"
