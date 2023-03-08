@@ -2,10 +2,13 @@
   "name": "@ymcop/ymcop",
   "version": "1.0.6",
   "description": "针对云脉后台的组件封装",
-  "main": "dist/main.js",
+  "main": "lib/index.js",
+  "files": ["lib"],
   "scripts": {
-    "test": "webpack && npm link",
-    "topublish": "webpack && npm version patch && npm publish --access=public"
+    "example": "webpack serve --open --config ./webpack.dev.js",
+    "build": "webpack --config ./webpack.prod.js",
+    "test": "webpack --config ./webpack.prod.js && npm link",
+    "topublish": "webpack --config ./webpack.prod.js && npm version patch && npm publish --access=public"
   },
   "repository": {
     "type": "git",
@@ -23,17 +26,23 @@
     "@babel/preset-react": "^7.18.6",
     "babel": "^6.23.0",
     "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "antd": "^5.2.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "antd": "^5.2.3"
   },
   "peerDependencies": {
-    "antd": "^5.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "antd": "^5.2.3"
   }
 }

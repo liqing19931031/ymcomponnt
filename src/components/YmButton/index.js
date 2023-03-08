@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from 'antd'
 
-const MyButton = () => {
+const YmButton = () => {
     return <Button>测试button</Button>
 }
 
-export default MyButton;
+export default YmButton;
